@@ -6,4 +6,4 @@
   <title>index - Important - Prajwal Koirala</title>
   </head>
  <body>
- Click <a href="https://www.prajwalkoirala.com/Important/vps_commands.php">Here</a> to go to VPS_COMMANDS.
+<a href="https://www.prajwalkoirala.com/Important/vps_commands.php">VPS_COMMANDS</a>
