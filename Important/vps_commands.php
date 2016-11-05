@@ -12,7 +12,7 @@
 <li class="li1"><div class="de1">sudo apt-get update</div></li>
 <li class="li1"><div class="de1">sudo apt-get upgrade -y</div></li>
 <li class="li2"><div class="de2">sudo apt-get install build-essential -y</div></li>
- <li class="li2"><div class="de2">sudo sudo apt-get dist-upgrade</div></li>
+ <li class="li2"><div class="de2">sudo sudo apt-get dist-upgrade -y</div></li>
 <li class="li1"><div class="de1">sudo apt-get install apache2 apache2-utils -y</div></li>
 <li class="li1"><div class="de1">sudo apt-get install mysql-server php5-mysql -y</div></li>
 <li class="li1"><div class="de1">sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt -y</div></li>
