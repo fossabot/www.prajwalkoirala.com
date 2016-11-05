@@ -6,4 +6,4 @@
   <title>index - Important - Prajwal Koirala</title>
   </head>
  <body>
-<a href="https://www.prajwalkoirala.com/Important/vps_commands.php">VPS_COMMANDS</a>
+<a href="https://www.prajwalkoirala.com/Important/vps_commands.php">VPS_Commands</a>
