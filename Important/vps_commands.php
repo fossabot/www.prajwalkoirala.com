@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Important - Prajwal Koirala</title>
+  <title>vps_commands - Important - Prajwal Koirala</title>
  </head>
  <body>
 <div id="selectable">
