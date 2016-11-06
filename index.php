@@ -9,8 +9,8 @@
  </head>
  <body>
      <class=is-loading><div id=wrapper><section id=main>
-     <header><span class=avatar><img src=https://www.prajwalkoirala.com/images/avatar.png alt="Prajwal Koirala" title="Avatar"/></span><h1>Prajwal Koirala</h1><p>Developer</header>
+     <header><span class=avatar><img src=https://www.prajwalkoirala.com/images/avatar.png alt="Prajwal Koirala" title="Avatar"/></span><h1>Prajwal Koirala</h1></header>
      <footer><ul class=icons><li><a class=fa-phone-square href=tel:+10000000000>Phone</a>
      <li><a class=fa-envelope-o href=mailto:admin@prajwalkoirala.com>Email</a>
-     <li><a class=fa-map-marker target="_blank" href=https://goo.gl/maps/5WFYyt2QDzp>Address</a></ul></footer></section>
+     <li><a class=fa-map-marker target="_blank" href=https://goo.gl/maps/5WFYyt2QDzp>Address</a></ul></section>
      <footer id=footer><ul class=copyright><li>©Prajwal Koirla</ul>
