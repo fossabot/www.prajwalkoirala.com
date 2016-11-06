@@ -14,4 +14,3 @@
      <li><a class=fa-envelope-o href=mailto:admin@prajwalkoirala.com>Email</a>
      <li><a class=fa-map-marker target="_blank" href=https://goo.gl/maps/5WFYyt2QDzp>Address</a></ul></footer></section>
      <footer id=footer><ul class=copyright><li>©Prajwal Koirla</ul>
-     <script>!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","https://www.prajwalkoirala.com/analytics.js","ga"),ga("create","UA-83860703-2","auto"),ga("send","pageview")</script>		
