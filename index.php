@@ -200,7 +200,7 @@
       height:1px;
       z-index:-1;
       background:#c8cccf}
-      @media screen and (max-width:480px){
+      @media screen and (max-width:500px){
       #main{
       min-width:0;
       width:100%;
