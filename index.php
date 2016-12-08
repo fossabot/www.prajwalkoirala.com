@@ -268,7 +268,7 @@
       #wrapper:before{
       content:'';
       display:block}
-      @media screen and (max-width:360px){
+      @media screen and (max-width:250px){
       #wrapper{
       padding:.75em}
       }
