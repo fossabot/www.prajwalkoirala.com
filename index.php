@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
    <meta charset="utf-8">
    <meta name=viewport content="width=device-width, initial-scale=1">
    <meta name=description content="PrajwalKoirala Inc. is a holding company that gives ambitious projects the resources, freedom, and focus to make their ideas happen.">
@@ -82,6 +83,7 @@
       padding:1.5em;
       z-index:2}
    </style>
+</head>
    <div id="wrapper">
    <section id="main">
    <span class=avatar><img src=https://www.prajwalkoirala.com/images/avatar.png alt="Prajwal Koirala" title="Avatar"/></span>
