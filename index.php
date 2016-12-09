@@ -85,8 +85,7 @@
    <div id="wrapper">
    <section id="main">
    <span class=avatar><img src=https://www.prajwalkoirala.com/images/avatar.png alt="Prajwal Koirala" title="Avatar"/></span>
-   <h1>
-   Prajwal Koirala /h1>
+   <h1>Prajwal Koirala</h1>
    <li>
       <style>{margin-top:-.675em} li{display:inline-block;padding:.675em .5em}</style>
       <a href=tel:+1347-349-1993>
