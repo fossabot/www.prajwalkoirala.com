@@ -2,7 +2,7 @@
 <html lang="en">
 	<meta charset="utf-8">
 	<meta name=viewport content="width=device-width, initial-scale=1">
-	<meta name=description content="PrajwalKoirala Inc. is a holding company that gives ambitious projects the resources, freedom, and focus to make their ideas happen!">
+	<meta name=description content="PrajwalKoirala Inc. is a holding company that gives ambitious projects the resources, freedom, and focus to make their ideas happen.">
 	<title>
 		Prajwal Koirala
 	</title>
