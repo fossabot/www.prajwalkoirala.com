@@ -5,86 +5,9 @@
    <meta name=viewport content="width=device-width, initial-scale=1">
    <meta name=description content="PrajwalKoirala Inc. is a holding company that gives ambitious projects the resources, freedom, and focus to make their ideas happen.">
    <title>Prajwal Koirala</title>
-   <style>
-      body {background-color: #000000;}
-      #main{
-      position:relative;
-      max-width:100%;
-      min-width:27em;
-      padding:4.5em 3em 3em;
-      background:#fff;
-      border-radius:4px;
-      cursor:default;
-      opacity:.95;
-      text-align:center;
-      -moz-transform-origin:50% 50%;
-      -webkit-transform-origin:50% 50%;
-      -ms-transform-origin:50% 50%;
-      transform-origin:50% 50%;
-      -moz-transform:rotateX(0);
-      -webkit-transform:rotateX(0);
-      -ms-transform:rotateX(0);
-      transform:rotateX(0);
-      -moz-transition:opacity 1s ease,-moz-transform 1s ease;
-      -webkit-transition:opacity 1s ease,-webkit-transform 1s ease;
-      -ms-transition:opacity 1s ease,-ms-transform 1s ease;
-      transition:opacity 1s ease,transform 1s ease}
-      #main .avatar{
-      position:relative;
-      display:block;
-      margin-bottom:1.5em}
-      #main .avatar img{
-      display:block;
-      margin:0 auto;
-      border-radius:100%;
-      box-shadow:0 0 0 1.5em #fff}
-      #main .avatar:before{
-      content:'';
-      display:block;
-      position:absolute;
-      top:50%;
-      left:-3em;
-      width:calc(100% + 6em);
-      height:1px;
-      z-index:-1;
-      background:#c8cccf}
-      @media screen and (max-width:500px){
-      #main{
-      min-width:0;
-      width:100%;
-      padding:4em 2em 2.5em}
-      #main .avatar:before{
-      left:-2em;
-      width:calc(100% + 4em)}
-      }
-      #wrapper{
-      display:-moz-flex;
-      display:-webkit-flex;
-      display:-ms-flex;
-      display:flex;
-      -moz-align-items:center;
-      -webkit-align-items:center;
-      -ms-align-items:center;
-      align-items:center;
-      -moz-justify-content:space-between;
-      -webkit-justify-content:space-between;
-      -ms-justify-content:space-between;
-      justify-content:space-between;
-      -moz-flex-direction:column;
-      -webkit-flex-direction:column;
-      -ms-flex-direction:column;
-      flex-direction:column;
-      -moz-perspective:1000px;
-      -webkit-perspective:1000px;
-      -ms-perspective:1000px;
-      perspective:1000px;
-      position:relative;
-      min-height:100%;
-      padding:1.5em;
-      z-index:2}
-   </style>
+   <style>body{background-color:#000}#main{position:relative;max-width:100%;min-width:27em;padding:4.5em 3em 3em;background:#fff;border-radius:4px;cursor:default;opacity:.95;text-align:center;-moz-transform-origin:50% 50%;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;-moz-transform:rotateX(0);-webkit-transform:rotateX(0);-ms-transform:rotateX(0);transform:rotateX(0);-moz-transition:opacity 1s ease,-moz-transform 1s ease;-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-ms-transition:opacity 1s ease,-ms-transform 1s ease;transition:opacity 1s ease,transform 1s ease}#main .avatar{position:relative;display:block;margin-bottom:1.5em}#main .avatar img{display:block;margin:0 auto;border-radius:100%;box-shadow:0 0 0 1.5em #fff}#main .avatar:before{content:'';display:block;position:absolute;top:50%;left:-3em;width:calc(100% + 6em);height:1px;z-index:-1;background:#c8cccf}@media screen and (max-width:500px){#main{min-width:0;width:100%;padding:4em 2em 2.5em}#main .avatar:before{left:-2em;width:calc(100% + 4em)}}#wrapper{display:-moz-flex;display:-webkit-flex;display:-ms-flex;display:flex;-moz-align-items:center;-webkit-align-items:center;-ms-align-items:center;align-items:center;-moz-justify-content:space-between;-webkit-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;-moz-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-moz-perspective:1000px;-webkit-perspective:1000px;-ms-perspective:1000px;perspective:1000px;position:relative;min-height:100%;padding:1.5em;z-index:2}</style>
 </head>
-   <body>
+<body>
    <div id="wrapper">
    <section id="main">
    <span class=avatar><img src=https://www.prajwalkoirala.com/images/avatar.png alt="Prajwal Koirala" title="Avatar"/></span>
@@ -109,3 +32,4 @@
          </svg>
       </a>
       <script>!function(e,t,a,n,c,s,o){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,s=t.createElement(a),o=t.getElementsByTagName(a)[0],s.async=1,s.src=n,o.parentNode.insertBefore(s,o)}(window,document,"script","https://www.prajwalkoirala.com/analytics.js","ga"),ga("create","UA-83860703-2","auto"),ga("send","pageview") </script>
+</body>
