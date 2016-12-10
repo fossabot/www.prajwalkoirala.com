@@ -84,6 +84,7 @@
       z-index:2}
    </style>
 </head>
+   <body>
    <div id="wrapper">
    <section id="main">
    <span class=avatar><img src=https://www.prajwalkoirala.com/images/avatar.png alt="Prajwal Koirala" title="Avatar"/></span>
