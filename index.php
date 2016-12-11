@@ -92,33 +92,6 @@
             padding: 1.5em;
             z-index: 2
         }
-        #footer {
-            -moz-align-self: -moz-flex-end;
-            -webkit-align-self: -webkit-flex-end;
-            -ms-align-self: -ms-flex-end;
-            align-self: flex-end;
-            width: 100%;
-            padding: 1.5em 0 0;
-            color: rgba(255, 255, 255, .75);
-            cursor: default;
-            text-align: center
-        }
-        #footer .copyright {
-            margin: 0;
-            padding: 0;
-            font-size: .9em;
-            list-style: none
-        }
-        #footer .copyright li {
-            display: inline-block;
-            margin: 0 0 0 .45em;
-            padding: 0 0 0 .85em;
-            border-left: solid 1px rgba(255, 255, 255, .5);
-            line-height: 1
-        }
-        #footer .copyright li:first-child {
-            border-left: 0
-        }
     </style>
 </head>
 
@@ -155,11 +128,6 @@
                             </svg>
                         </a>
         </section>
-        <footer id="footer">
-            <ul class="copyright">
-                <li>&copy; Prajwal Koirala</li>
-            </ul>
-        </footer>
         <script>
             ! function(e, t, a, n, c, s, o) {
                 e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
