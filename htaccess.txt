@@ -1,5 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.
-RewriteRule ^(.*)$ https://www.prajwalkoirala.com/$1 [R=301,L]
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule ^([^.]+)$ $1.php [NC,L]
