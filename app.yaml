@@ -1,0 +1,16 @@
+runtime: python27
+api_version: 1
+default_expiration: "365d"
+threadsafe: true
+
+handlers:
+- url: /.well-known
+  static_dir: .well-known
+  
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+  
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
