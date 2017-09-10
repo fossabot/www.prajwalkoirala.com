@@ -3,37 +3,34 @@ env: standard
 threadsafe: true
 default_expiration: 31536000s
 handlers:
-  - url: '/.well-known/(.*)'
+  - url: /.well-known
+    static_dir: well-known
     secure: always
-    application_readable: false
-    static_files: "well-known/\\1"
-    require_matching_file: false
-    upload: 'well-known/.*'
-      http_headers:
+    http_headers:
     Vary: Accept-Encoding
   - url: /
-    secure: always
     application_readable: true
-    static_files: __static__/www/index.html
+    static_files: www/index.html
     require_matching_file: true
-    upload: __static__/www/index.html
-      http_headers:
+    upload: www/index.html
+    secure: always
+    http_headers:
     Vary: Accept-Encoding
   - url: '/(.*)'
+    application_readable: true
+    static_files: "www/\\1"
+    require_matching_file: true
+    upload: 'www/(.*)'
     secure: always
+    http_headers:
+    Vary: Accept-Encoding
+  - url: "/(.*\\.(ico|png))$"
     application_readable: true
     static_files: "__static__/www/\\1"
     require_matching_file: true
-    upload: '__static__/www/(.*)'
-      http_headers:
-    Vary: Accept-Encoding
-  - url: "/(.*\\.(ico|png))$"
+    upload: "__static__/www/.*\\.(ico|png)$"
     secure: always
-    application_readable: true
-    static_files: "__static__/__static__/www/\\1"
-    require_matching_file: true
-    upload: "__static__/__static__/www/.*\\.(ico|png)$"
-      http_headers:
+    http_headers:
     Vary: Accept-Encoding
 automatic_scaling:
   min_idle_instances: automatic
