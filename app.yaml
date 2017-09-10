@@ -6,7 +6,8 @@ threadsafe: true
 handlers:
 - url: /.well-known
   static_dir: .well-known
-  
+  upload: www/(.*)
+
 - url: /
   static_files: www/index.html
   upload: www/index.html
