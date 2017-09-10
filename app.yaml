@@ -6,7 +6,7 @@ threadsafe: true
 handlers:
 - url: /.well-known
   static_dir: .well-known
-  upload: www/(.*)
+  static_files: www/.well-known/acme-challenge/index.html
 
 - url: /
   static_files: www/index.html
