@@ -24,4 +24,4 @@ automatic_scaling:
   min_pending_latency: automatic
   max_pending_latency: automatic
 error_handlers:
-  - file: 404.html
+  - file: www/404.html
