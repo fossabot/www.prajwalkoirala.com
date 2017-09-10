@@ -6,7 +6,7 @@ handlers:
   - url: /.well-known
     static_dir: well-known
     secure: always
-    http_headers:
+  http_headers:
     Vary: Accept-Encoding
   - url: /
     application_readable: true
@@ -14,7 +14,7 @@ handlers:
     require_matching_file: true
     upload: www/index.html
     secure: always
-    http_headers:
+  http_headers:
     Vary: Accept-Encoding
   - url: '/(.*)'
     application_readable: true
@@ -22,7 +22,7 @@ handlers:
     require_matching_file: true
     upload: 'www/(.*)'
     secure: always
-    http_headers:
+  http_headers:
     Vary: Accept-Encoding
   - url: "/(.*\\.(ico|png))$"
     application_readable: true
@@ -30,7 +30,7 @@ handlers:
     require_matching_file: true
     upload: "__static__/www/.*\\.(ico|png)$"
     secure: always
-    http_headers:
+  http_headers:
     Vary: Accept-Encoding
 automatic_scaling:
   min_idle_instances: automatic
