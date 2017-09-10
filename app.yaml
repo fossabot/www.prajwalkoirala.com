@@ -18,10 +18,10 @@ handlers:
     static_files: www/\1
     upload: www/.*\.(ico|png)$
     secure: always
-  - url: /.*
-  script: main.py
 automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
   min_pending_latency: automatic
   max_pending_latency: automatic
+error_handlers:
+  - file: 404.html
