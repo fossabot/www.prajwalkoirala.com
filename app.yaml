@@ -6,16 +6,12 @@ handlers:
   - url: /.well-known
     static_dir: well-known
     secure: always
-  http_headers:
-    Vary: Accept-Encoding
   - url: /
     application_readable: true
     static_files: www/index.html
     require_matching_file: true
     upload: www/index.html
     secure: always
-  http_headers:
-    Vary: Accept-Encoding
   - url: '/(.*)'
     application_readable: true
     static_files: "www/\\1"
