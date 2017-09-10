@@ -1,25 +1,30 @@
 runtime: python27
-api_version: 1
-default_expiration: "365d"
+env: standard
 threadsafe: true
-
+default_expiration: 31536000s
 handlers:
-- url: /.well-known
-  static_dir: .well-known
-  static_files: www/.well-known/acme-challenge/index.html
-
-- url: /
-  static_files: www/index.html
-  upload: www/index.html
-  
-- url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
-
-- url: /(.*\.(ico|png))$
-  static_files: www/\1
-  upload: www/.*\.(ico|png)$
-  application_readable: true
-
-error_handlers:
-- file: www/404.html
+  - url: /.well-known
+    application_readable: true
+    static_files: www/.well-known/acme-challenge/index.html
+    require_matching_file: true
+    upload: www/.well-known/acme-challenge/index.html
+  - url: /
+    application_readable: true
+    static_files: www/index.html
+    require_matching_file: true
+    upload: www/index.html
+  - url: '/(.*)'
+    application_readable: true
+    static_files: "www/\\1"
+    require_matching_file: true
+    upload: 'www/(.*)'
+  - url: "/(.*\\.(ico|png))$"
+    application_readable: true
+    static_files: "__static__/www/\\1"
+    require_matching_file: true
+    upload: "__static__/www/.*\\.(ico|png)$"
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+  min_pending_latency: automatic
+  max_pending_latency: automatic
