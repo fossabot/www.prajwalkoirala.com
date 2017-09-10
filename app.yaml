@@ -1,28 +1,22 @@
 runtime: python27
 env: standard
 threadsafe: true
-default_expiration: 31536000s
+default_expiration: "365d"
 handlers:
   - url: /.well-known
     static_dir: well-known
     secure: always
   - url: /
-    application_readable: true
     static_files: www/index.html
-    require_matching_file: true
     upload: www/index.html
     secure: always
   - url: '/(.*)'
-    application_readable: true
     static_files: "www/\\1"
-    require_matching_file: true
     upload: 'www/(.*)'
     secure: always
   - url: "/(.*\\.(ico|png))$"
-    application_readable: true
-    static_files: "__static__/www/\\1"
-    require_matching_file: true
-    upload: "__static__/www/.*\\.(ico|png)$"
+    static_files: www/\1
+    upload: www/.*\.(ico|png)$
     secure: always
 automatic_scaling:
   min_idle_instances: automatic
