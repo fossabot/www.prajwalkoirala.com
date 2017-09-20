@@ -3,9 +3,6 @@ env: standard
 threadsafe: true
 default_expiration: "365d"
 handlers:
-  - url: /.well-known
-    static_dir: well-known
-    secure: always
   - url: /
     static_files: www/index.html
     upload: www/index.html
@@ -23,5 +20,3 @@ automatic_scaling:
   max_idle_instances: automatic
   min_pending_latency: automatic
   max_pending_latency: automatic
-error_handlers:
-  - file: www/404.html
