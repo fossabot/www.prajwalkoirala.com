@@ -14,7 +14,7 @@ handlers:
       X-Xss-Protection: '1; mode=block'
       X-Content-Type-Options: 'nosniff'
       Referrer-Policy: 'unsafe-url'
-      Header append Vary: 'Accept-Encoding'
+      Vary: 'Accept-Encoding'
   - url: '/(.*)'
     static_files: "www/\\1"
     upload: 'www/(.*)'
@@ -26,7 +26,7 @@ handlers:
       X-Xss-Protection: '1; mode=block'
       X-Content-Type-Options: 'nosniff'
       Referrer-Policy: 'unsafe-url'
-      Header append Vary: 'Accept-Encoding'
+      Vary: 'Accept-Encoding'
   - url: "/(.*\\.(ico|png))$"
     static_files: www/\1
     upload: www/.*\.(ico|png)$
@@ -38,7 +38,7 @@ handlers:
       X-Xss-Protection: '1; mode=block'
       X-Content-Type-Options: 'nosniff'
       Referrer-Policy: 'unsafe-url'
-      Header append Vary: 'Accept-Encoding'
+      Vary: 'Accept-Encoding'
 automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
