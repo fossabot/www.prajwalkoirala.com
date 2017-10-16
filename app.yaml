@@ -10,6 +10,8 @@ handlers:
     http_headers:
       Strict-Transport-Security: 'max-age=63072000; includeSubDomains; preload'
       Content-Security-Policy: "script-src 'self'; object-src 'self'"
+      X-Frame-Options: 'SAMEORIGIN'
+      X-Xss-Protection: '1; mode=block'
   - url: '/(.*)'
     static_files: "www/\\1"
     upload: 'www/(.*)'
@@ -17,6 +19,8 @@ handlers:
     http_headers:
       Strict-Transport-Security: 'max-age=63072000; includeSubDomains; preload'
       Content-Security-Policy: "script-src 'self'; object-src 'self'"
+      X-Frame-Options: 'SAMEORIGIN'
+      X-Xss-Protection: '1; mode=block'
   - url: "/(.*\\.(ico|png))$"
     static_files: www/\1
     upload: www/.*\.(ico|png)$
@@ -24,6 +28,8 @@ handlers:
     http_headers:
       Strict-Transport-Security: 'max-age=63072000; includeSubDomains; preload'
       Content-Security-Policy: "script-src 'self'; object-src 'self'"
+      X-Frame-Options: 'SAMEORIGIN'
+      X-Xss-Protection: '1; mode=block'
 automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
