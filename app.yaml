@@ -12,6 +12,7 @@ handlers:
       Content-Security-Policy: "script-src 'self'; object-src 'self'"
       X-Frame-Options: 'SAMEORIGIN'
       X-Xss-Protection: '1; mode=block'
+      X-Content-Type-Options: 'nosniff'
   - url: '/(.*)'
     static_files: "www/\\1"
     upload: 'www/(.*)'
@@ -21,6 +22,7 @@ handlers:
       Content-Security-Policy: "script-src 'self'; object-src 'self'"
       X-Frame-Options: 'SAMEORIGIN'
       X-Xss-Protection: '1; mode=block'
+      X-Content-Type-Options: 'nosniff'
   - url: "/(.*\\.(ico|png))$"
     static_files: www/\1
     upload: www/.*\.(ico|png)$
@@ -30,6 +32,7 @@ handlers:
       Content-Security-Policy: "script-src 'self'; object-src 'self'"
       X-Frame-Options: 'SAMEORIGIN'
       X-Xss-Protection: '1; mode=block'
+      X-Content-Type-Options: 'nosniff'
 automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
