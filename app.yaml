@@ -7,20 +7,23 @@ handlers:
     static_files: www/index.html
     upload: www/index.html
     secure: always
-        http_headers:
-      Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+    http_headers:
+      Access-Control-Allow-Origin: '*'
+      Strict-Transport-Security: 'max-age=63072000; preload'
   - url: '/(.*)'
     static_files: "www/\\1"
     upload: 'www/(.*)'
     secure: always
-        http_headers:
-      Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+    http_headers:
+      Access-Control-Allow-Origin: '*'
+      Strict-Transport-Security: 'max-age=63072000; preload'
   - url: "/(.*\\.(ico|png))$"
     static_files: www/\1
     upload: www/.*\.(ico|png)$
     secure: always
-        http_headers:
-      Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+    http_headers:
+      Access-Control-Allow-Origin: '*'
+      Strict-Transport-Security: 'max-age=63072000; preload'
 automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
