@@ -13,6 +13,7 @@ handlers:
       X-Frame-Options: 'SAMEORIGIN'
       X-Xss-Protection: '1; mode=block'
       X-Content-Type-Options: 'nosniff'
+      Referrer-Policy: 'unsafe-url'
   - url: '/(.*)'
     static_files: "www/\\1"
     upload: 'www/(.*)'
@@ -23,6 +24,7 @@ handlers:
       X-Frame-Options: 'SAMEORIGIN'
       X-Xss-Protection: '1; mode=block'
       X-Content-Type-Options: 'nosniff'
+      Referrer-Policy: 'unsafe-url'
   - url: "/(.*\\.(ico|png))$"
     static_files: www/\1
     upload: www/.*\.(ico|png)$
@@ -33,6 +35,7 @@ handlers:
       X-Frame-Options: 'SAMEORIGIN'
       X-Xss-Protection: '1; mode=block'
       X-Content-Type-Options: 'nosniff'
+      Referrer-Policy: 'unsafe-url'
 automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
