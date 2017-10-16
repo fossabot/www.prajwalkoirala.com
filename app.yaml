@@ -9,18 +9,21 @@ handlers:
     secure: always
     http_headers:
       Strict-Transport-Security: 'max-age=63072000; includeSubDomains; preload'
+      Content-Security-Policy: "script-src 'self'; object-src 'self'"
   - url: '/(.*)'
     static_files: "www/\\1"
     upload: 'www/(.*)'
     secure: always
     http_headers:
       Strict-Transport-Security: 'max-age=63072000; includeSubDomains; preload'
+      Content-Security-Policy: "script-src 'self'; object-src 'self'"
   - url: "/(.*\\.(ico|png))$"
     static_files: www/\1
     upload: www/.*\.(ico|png)$
     secure: always
     http_headers:
       Strict-Transport-Security: 'max-age=63072000; includeSubDomains; preload'
+      Content-Security-Policy: "script-src 'self'; object-src 'self'"
 automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
