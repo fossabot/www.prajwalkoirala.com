@@ -1,0 +1,24 @@
+{
+  "name": "PrajwalKoirala",
+  "short_name": "PrajwalKoirala",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#000000",
+  "description": "One Day I'll Add This.",
+"icons": [{
+    "src": "/android-chrome-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }, {
+    "src": "/android-chrome-384x384.png",
+    "type": "image/png",
+    "sizes": "384x384"
+  }, {
+    "src": "images/touch/ms-touch-icon-144x144-precomposed.png",
+    "type": "image/png",
+    "sizes": "144x144"
+  }, {
+    "src": "images/touch/chrome-touch-icon-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
