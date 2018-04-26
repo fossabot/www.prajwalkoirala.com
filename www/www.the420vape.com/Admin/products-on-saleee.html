@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Admin &ndash; WEBSITE-TITLE</title>
+	<meta name="description" content="Admin Panel of The Website">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+		<header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600 ">
+			<div class="mdl-layout__header-row">       <div class="mdl-layout-spacer"></div>
+			<a href="#" class="mdl-layout-title mdl-color-text--grey-600" style="text-decoration: none;">Webiste Title</a>
+				<div class="mdl-layout-spacer"></div>
+				</div>
+		</header>
+		<div class="demo-drawer mdl-layout__drawer mdl-color--grey-500 mdl-color-text--blue-grey-50">
+			<header class="demo-drawer-header">
+				<img src="images/user.jpg" class="demo-avatar">
+				<div class="demo-avatar-dropdown"> <span>example@example.com</span>
+					<div class="mdl-layout-spacer"></div>
+					<button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">arrow_drop_down</i>
+						<span class="visuallyhidden">Accounts</span>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-color--grey-500" for="accbtn">
+							<li class="mdl-menu__item"> <i class="material-icons">settings</i>Settings</li>
+							<div class="sidebar-separator"></div>
+							<li class="mdl-menu__item"> <i class="material-icons">remove</i>Logout</li>
+				</ul>
+		  </div>
+	</header>
+			<nav class="demo-navigation mdl-navigation mdl-color--grey-600 mdl-color-text--blue-grey-50">
+				<a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">home</i>Home</a>
+				<div class="sidebar-separator"></div>
+                <a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">movie</i>Add Products</a>
+				<div class="sidebar-separator"></div>
+				<a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">info</i>Info</a>
+				<a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">report</i>Reports</a>
+				<a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">security</i>Security</a>
+				<a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">change_history</i>Change History</a>
+				<a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">update</i>Update</a>
+                <a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">bug_report</i>Bug Report</a>
+                <a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">error_outline</i>Error</a>
+                <a class="mdl-navigation__link" href=""> <i class="material-icons" role="presentation">restore_page</i>Trash</a>
+				<div class="sidebar-separator"></div>
+				<a class="mdl-navigation__link" href="#"> <i class="material-icons" role="presentation">help_outline</i>Help</a>
+			</nav>
+        </div>
+		<main class="mdl-layout__content">
+			<div class="mdl-layout__tab-panel is-active" id="overview">
+				<section class="section--center mdl-grid ">
+					<div id="piechart"></div>					
+					<script type="text/javascript">
+					// Load google charts
+					google.charts.load('current', {'packages':['corechart']});
+					google.charts.setOnLoadCallback(drawChart);
+					
+					// Draw the chart and set the chart values
+					function drawChart() {
+					  var data = google.visualization.arrayToDataTable([
+					  ['Task', 'Hours per Day'],
+					  ['OG 420 Kush', 80],
+					  ['OG 420 Kush', 60],
+					  ['OG 420 Kush', 400],
+					  ['OG 420 Kush', 55],
+					  ['OG 420 Kush', 92],
+					  ['OG 420 Kush', 500],
+					]);
+					
+					  // Optional; add a title and set the width and height of the chart
+					  var options = {'title':'Total Products That I Own.', 'width':1000, 'height':500};
+					
+					  // Display the chart inside the <div> element with id="piechart"
+					  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+					  chart.draw(data, options);
+					}
+					</script>
+					</div>
+						  <center>
+								<div>
+								   <a><h5>Add Or Remove Product</a></h5>
+								   <h10>If You Say "Product-Name:12" it will add it and if you say "Product-Name:-12" it will remove it.</h10>
+								   <h10>If The Product is already there than it will just add it to the total.</h10>
+								</div>
+								<form action="#">
+										<div class="mdl-textfield mdl-js-textfield" style="width:25%">
+										  <input class="mdl-textfield__input" type="text" pattern="-?[0-9+-]*(\.[0-9+-]+)?" id="product">
+										  <label class="mdl-textfield__label" for="product">Add A Name...</label>
+										  <span class="mdl-textfield__error">Input is not a number!</span>
+										</div>
+									  </form>
+								</div>
+								<center><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Save</button></center>
+							 </center>
+							 <div class="sidebar-separator"></div>
+                </section>
+</html>
