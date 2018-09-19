@@ -8,6 +8,7 @@ handlers:
     secure: always
     application_readable: false
     http_headers:
+      Content-Security-Policy: "script-src 'self'; object-src 'self'"
       Referrer-Policy: unsafe-url
       Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
       Vary: Accept-Encoding
@@ -21,6 +22,7 @@ handlers:
     secure: always
     application_readable: false
     http_headers:
+      Content-Security-Policy: "script-src 'self'; object-src 'self'"
       Referrer-Policy: unsafe-url
       Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
       Vary: Accept-Encoding
@@ -34,6 +36,7 @@ handlers:
     secure: always
     application_readable: false
     http_headers:
+      Content-Security-Policy: "script-src 'self'; object-src 'self'"
       Referrer-Policy: unsafe-url
       Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
       Vary: Accept-Encoding
